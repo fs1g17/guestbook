@@ -52,8 +52,10 @@ class CommentCrudController extends AbstractCrudController
         }
     }
 
-    // public function configureFilters(Filters $filters): Filters
-    // {
-
-    // }
+    public function configureFilters(Filters $filters): Filters
+    {
+        return $filters
+        ->add('conference')
+        ;
+    }
 }
